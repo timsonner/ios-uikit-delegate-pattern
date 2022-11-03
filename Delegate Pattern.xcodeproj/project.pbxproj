@@ -42,7 +42,6 @@
 		2B3FC6032911C0CA0076DF0D = {
 			isa = PBXGroup;
 			children = (
-				2B3FC6232911DCE80076DF0D /* SwitchViewController.swift */,
 				2B3FC60E2911C0CA0076DF0D /* Delegate Pattern */,
 				2B3FC60D2911C0CA0076DF0D /* Products */,
 			);
@@ -61,6 +60,7 @@
 			children = (
 				2B3FC60F2911C0CA0076DF0D /* AppDelegate.swift */,
 				2B3FC6112911C0CA0076DF0D /* SceneDelegate.swift */,
+				2B3FC6232911DCE80076DF0D /* SwitchViewController.swift */,
 				2B3FC6132911C0CA0076DF0D /* ViewController.swift */,
 				2B3FC6152911C0CA0076DF0D /* Main.storyboard */,
 				2B3FC6182911C0D20076DF0D /* Assets.xcassets */,

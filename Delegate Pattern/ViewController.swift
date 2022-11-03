@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-        var lightOn = false
+        var switchState = false
         
     @IBOutlet weak var emojiLabel: UILabel!
     
@@ -23,15 +23,15 @@ class ViewController: UIViewController {
         
         @objc func goToSwitchView() {
             let controller = storyboard?.instantiateViewController(identifier: "SwitchViewController") as! SwitchViewController
-            controller.switchIsOn = lightOn
+            controller.switchIsOn = switchState
             controller.delegate = self
             present(controller, animated: true, completion: nil)
         }
     }
 
-    extension ViewController: switchDelegate {
+    extension ViewController: SwitchDelegate {
         func toggleSwitch(_ isSwitchOn: Bool) {
-            lightOn = isSwitchOn
+            switchState = isSwitchOn
             if isSwitchOn {
                 self.view.backgroundColor = .orange
                 emojiLabel.text = "🌞"

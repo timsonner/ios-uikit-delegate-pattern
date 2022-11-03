@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol switchDelegate {
+protocol SwitchDelegate {
     func toggleSwitch(_ state: Bool)
 }
 
@@ -16,7 +16,7 @@ class SwitchViewController: UIViewController {
     @IBOutlet weak var switchView: UISwitch!
     
     var switchIsOn: Bool!
-    var delegate: switchDelegate!
+    var delegate: SwitchDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
